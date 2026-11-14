@@ -7,9 +7,9 @@ const links = {
 
   // Daftar URL tujuan dengan kata kunci
     "simulasi": "https://docs.google.com/forms/d/e/1FAIpQLSee8sYM0UhNvIzGp1NSG6pLJsmkw-dlcrTKewDHwCYIbvUVcw/viewform?usp=dialog",
-    "paket1": "https://forms.gle/UCc2JUMiL7gdpfQq8",
-    "paket2": "https://forms.gle/QvDd8rpXus9JuMMKA",
-    "paket3": "https://forms.gle/SnLKENZhMPQd8skGA",
+    "paket1": "https://forms.gle/LDSM5DguDmv3LRUj7",
+    "paket2": "https://forms.gle/2LtYd5eV3L9buGy77",
+    "paket3": "https://forms.gle/d11rdARKVcPQwLsq5",
 };
 
 
@@ -25,7 +25,7 @@ function getParam(name) {
 const target = getParam("to");
 
 // Tentukan URL tujuan (LOGIKA INTI)
-const destination = links[target] || links["paket1"];
+const destination = links[target] || links["simulasi"];
 
 // Update link manual (tombol) agar sesuai dengan tujuan akhir
 document.getElementById('manual-link').href = destination;
